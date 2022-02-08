@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
+    <title>Senior Developer Survey</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Road Map Survey</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time out to help structure the road map for aspiring developers
+          </p>
+          <p>With this survey I hope to collect data from experienced developers; 
+            to ask what if they had to do it all over again from Hello World!
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="optional-tag">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>what was your first programming language?</p>
+            <select id="dropdown" name="language" class="form-control" required>
+              <option disabled selected value>Select first language</option>
+              <option value="Java">java</option>
+              <option value="C">c</option>
+              <option value="C++">c++</option>
+              <option value="C#">c#</option>
+              <option value="JavaScript">javascript</option>
+              <option value="Python">python</option>
+              <option value="Go">go</option>
+              <option value="Swift">swift</option>
+              <option value="PHP">php</option>
+              <option value="R">r</option>
+              <option value="Dart">dart</option>
+              <option value="Kotlin">kotlin</option>
+              <option value="Perl">perl</option>
+              <option value="Rust">rust</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>How would you choose to relearn your first language</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="college"
+                type="radio"
+                class="input-radio"
+                checked
+              />college</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="boot-camp"
+                type="radio"
+                class="input-radio"
+              />boot camp</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="self-taught"
+                type="radio"
+                class="input-radio"
+              />self taught</label
+            >
+          </div>
+
+          <div class="form-group">
+            <p>Describe the first project you would build</p>
+            <textarea
+              id="first-project-description"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your first project description here..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <p>Did you stick with your first language until employed?</p>
+            <label>
+              <input
+                name="commited-to-first-language"
+                value="yes"
+                type="radio"
+                class="input-radio"
+                checked
+              />yes</label
+            >
+            <label>
+              <input
+                name="did-not-commit-to-first-language"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >     
+          </div>
+
+          <div class="form-group">
+            <p>if no, then why?</p>
+            <textarea
+              id="if-no"
+              class="input-textarea"
+              name="if-no"
+              placeholder="Enter language you switch to and why..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What do you wish you focused more on?
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Front-end Projects</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Back-end Projects</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Data Visualization</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Challenges</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />Open Source Community</label
+            >
+        
+            <label
+              ><input
+                name="prefer"
+                value="video-content-creation"
+                type="checkbox"
+                class="input-checkbox"
+              />video content creation</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="city-meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />City Meetups</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="blog"
+                type="checkbox"
+                class="input-checkbox"
+              />bloging</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="forums"
+                type="checkbox"
+                class="input-checkbox"
+              />Forums</label
+            >
+            <label
+              ><input
+                name="hackathons"
+                value="forums"
+                type="checkbox"
+                class="input-checkbox"
+              />hackathons</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="additional-courses"
+                type="checkbox"
+                class="input-checkbox"
+              />Additional Courses</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>      
+</body>
+</html>
